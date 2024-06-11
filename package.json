@@ -1,0 +1,34 @@
+{
+  "name": "captainhook-npm",
+  "url": "http://captainhook.info",
+  "version": "1.0.0",
+  "description": "CaptainHook is a very flexible git hook manager for software developers that makes sharing git hooks with your team a breeze",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captainhook-go/captainhook-npm.git"
+  },
+  "keywords": [
+    "git",
+    "hooks"
+  ],
+  "author": "Sebastian Feldmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/captainhook-go/captainhook-npm/issues"
+  },
+  "homepage": "https://github.com/captainhook-go/captainhook-npm#readme",
+  "dependencies": {
+    "go-npm": "^0.1.9"
+  },
+  "scripts": {
+    "postinstall": "go-npm install",
+    "preuninstall": "go-npm uninstall",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "goBinary": {
+      "name": "captainhook",
+      "path": "./bin",
+      "url": "https://github.com/captainhook-go/captainhook/releases/download/{{version}}/captainhook_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  } 
+}
